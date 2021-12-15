@@ -1,4 +1,5 @@
-# selenium-example
+# java-selenuim-tests-gh-action
+
 An example project of selenium using ChromeWebDriver running automated tests on github action runners.
 
 ## Prerequisites
