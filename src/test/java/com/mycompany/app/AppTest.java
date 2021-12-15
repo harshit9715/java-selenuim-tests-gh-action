@@ -1,11 +1,13 @@
 package com.mycompany.app;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
+
+import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.By.ByXPath;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -53,5 +55,10 @@ public class AppTest {
             e.printStackTrace();
         }
         driver.close();
+    }
+
+    @After
+    public void teardown() throws IOException {
+        driver.quit();
     }
 }
